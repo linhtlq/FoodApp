@@ -21,7 +21,7 @@
             android:name=".Index"
             android:label="@string/title_activity_index"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
     </application>
 
 </manifest>

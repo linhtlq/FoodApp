@@ -2,12 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mypc.ffood.fragment.User">
+    tools:context="com.example.mypc.ffood.fragment.USAfood">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/lisview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:dividerHeight="10.0sp"
+        android:layout_height="match_parent">
+    </ListView>
 
 </FrameLayout>

@@ -1,8 +1,13 @@
-package com.example.mypc.ffood;
+package com.example.mypc.ffood.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.mypc.ffood.fragment.JPfood;
+import com.example.mypc.ffood.fragment.TrangChu;
+import com.example.mypc.ffood.fragment.USAfood;
+import com.example.mypc.ffood.fragment.VNfood;
 
 /**
  * Created by Dell on 11/24/2017.
@@ -23,13 +28,13 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 TrangChu tab1 = new TrangChu();
                 return tab1;
             case 1:
-                SanPham tab2 = new SanPham();
+                VNfood tab2 = new VNfood();
                 return tab2;
             case 2:
-                User tab3 = new User();
+                USAfood tab3 = new USAfood();
                 return tab3;
             case 3:
-                Map tab4 = new Map();
+                JPfood tab4 = new JPfood();
                 return tab4;
             default:
                 return null;

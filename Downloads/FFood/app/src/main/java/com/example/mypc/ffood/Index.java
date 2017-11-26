@@ -1,11 +1,12 @@
 package com.example.mypc.ffood;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.mypc.ffood.adapter.PagerAdapter;
 
 
 public class Index extends AppCompatActivity
@@ -46,10 +50,10 @@ public class Index extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 4"));
+        tabLayout.addTab(tabLayout.newTab().setText("Home"));
+        tabLayout.addTab(tabLayout.newTab().setText("VN Food"));
+        tabLayout.addTab(tabLayout.newTab().setText("USA Food"));
+        tabLayout.addTab(tabLayout.newTab().setText("JP Food"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -111,12 +115,19 @@ public class Index extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        switch (id){
+            case R.id.nav_camera:
+                Intent intent = new Intent(this,MainActivity.class);
+                startActivity(intent);
+                break;
+                default:
+        }
+
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
@@ -124,7 +135,6 @@ public class Index extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

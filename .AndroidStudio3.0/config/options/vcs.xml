@@ -6,8 +6,20 @@
           <option name="url" value="https://github.com/newbie-code/FFood.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/aturia/FoodApp.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/newbie-code/FoodApp.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/aturia/Lab4.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="E:\androidSoureCode" />
+    <option name="cloneParentDir" value="C:\Users\Dell\Desktop\FFood" />
   </component>
 </application>

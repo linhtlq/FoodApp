@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/foodbackground"
+    android:background="@drawable/registerbackground"
+    android:orientation="vertical"
     tools:context="com.example.mypc.ffood.Register">
-</FrameLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+         />
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/editName"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:hint="Password"
+        android:gravity="center"
+        android:inputType="numberPassword" />
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="130dp"
+            android:background="#d4f55858"
+            android:textColor="#FFF"
+            android:layout_height="wrap_content"
+            android:text="Sign in" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="#FFF"
+            android:background="#d4f55858"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvForgotpassword"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

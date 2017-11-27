@@ -114,20 +114,14 @@ public class Index extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        switch (id){
-            case R.id.nav_camera:
-                Intent intent = new Intent(this,MainActivity.class);
-                startActivity(intent);
-                break;
-                default:
-        }
-
         if (id == R.id.nav_camera) {
+            Intent intent = new Intent(this,User.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
+
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
